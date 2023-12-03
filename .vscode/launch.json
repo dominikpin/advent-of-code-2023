@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "args": [
+                "3",
+                "2"
+            ],
+            "projectName": "advent of code_883f09c7",
+            "cwd": "${workspaceFolder}",
+        },
+    ]
+}
