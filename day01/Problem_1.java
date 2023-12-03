@@ -1,10 +1,13 @@
+package day01;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Star_1 {
-    public static void main(String args[]) throws FileNotFoundException {
-        File myObj = new File("input.txt");
+public class Problem_1 {
+
+    public Problem_1() throws FileNotFoundException {
+        File myObj = new File("day01\\input.txt");
         Scanner myReader = new Scanner(myObj);
         int sum = 0;
         while (myReader.hasNextLine()) {
@@ -12,10 +15,10 @@ public class Star_1 {
             sum += analyzeOneLine(data);
         }
         myReader.close();
-        System.err.println(sum);
+        System.out.println(sum);
     }
 
-    public static int analyzeOneLine(String line) {
+    private static int analyzeOneLine(String line) {
         String firstNum = ""; 
         String lastNum = "";
         for (int i = 0; i < line.length(); i++) {

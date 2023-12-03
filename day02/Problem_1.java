@@ -1,13 +1,15 @@
+package day02;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Star_1 {
+public class Problem_1 {
 
     private static String[][] possibleCubes = {{"12", "red"}, {"13", "green"}, {"14", "blue"}};
 
-    public static void main(String args[]) throws FileNotFoundException {
-        File myObj = new File("input.txt");
+    public Problem_1() throws FileNotFoundException {
+        File myObj = new File("day02\\input.txt");
         Scanner myReader = new Scanner(myObj);
         int sum = 0;
         int gameNum = 0;
@@ -19,10 +21,10 @@ public class Star_1 {
             }
         }
         myReader.close();
-        System.err.println(sum);
+        System.out.println(sum);
     }
 
-    public static boolean analyzeOneLine(String line) {
+    private static boolean analyzeOneLine(String line) {
         String[] sets = line.split(":")[1].split(";");
         for (int i = 0; i < sets.length; i++) {
             String[] set = sets[i].split(",");
