@@ -19,7 +19,8 @@ public class Main {
             Class<?> problemClass = Class.forName(className);
             problemClass.getDeclaredConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
-            System.err.printf("day %d, problem %s not found.", Integer.parseInt(day), star);
+            System.err.printf("day %d, problem %s not found.\n", Integer.parseInt(day), star);
+            System.err.println(e);
         }
     }
 }

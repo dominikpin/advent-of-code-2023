@@ -18,23 +18,41 @@ This repository contains my solutions to the [Advent of Code 2023](https://adven
 ## Usage
 
 Code is written in Java and needs [Java jdk](https://www.geeksforgeeks.org/download-and-install-java-development-kit-jdk-on-windows-mac-and-linux/) installed and ready to run.
-Once Java jdk is setup navigate to the root folder of the project and open the terminal and run:
 
-```terminal
-javac Main.java
-java Main [day] [problem]
+Option 1:
+Once Java jdk is setup, open the project in [VSCode](https://code.visualstudio.com/download). In VSCode navigate to .vscode/launch.json file and change in args which day and which problem you would like to run.
+
+For Example (day 3, problem 2):
 ```
+...
+  "args": [
+      "3", // day number
+      "2", // problem number
+  ],
+...
+```
+
+Option 2:
+Once Java jdk is setup, go to the root of project and open the terminal and run:
+```
+javac Main.java
+javac day[number of day in two digits. e.g. 02 for day 2 or 14 for day 14]\Problem_[1/2].java
+java Main
+```
+
 
 ## Folder Structure
 
 - day01: Contains solutions for day 1.
   - Problem_1.java: Solution to part 1.
-  - Problem_1.class: Compiled solution part 1.
   - Problem_2.java: Solution to part 2.
-  - Problem_2.class: Compiled solution part 2.
   - input.txt: Input file of the day.
+  - option 1:
   - test1.txt: Short helpful input file for part 1.
   - test2.txt: Short helpful input file for part 2.
+  - option 2:
+  - test1,2.txt: Short helpful input file for part 1 and 2.
+  - may include some helper .java files.
 - day02: Contains solutions for Day 2.
   - ...
 

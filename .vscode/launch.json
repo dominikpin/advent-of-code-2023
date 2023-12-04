@@ -7,8 +7,8 @@
             "request": "launch",
             "mainClass": "Main",
             "args": [
-                "3",
-                "2"
+                "4", // day number
+                "2", // problem number
             ],
             "projectName": "advent of code_883f09c7",
             "cwd": "${workspaceFolder}",
