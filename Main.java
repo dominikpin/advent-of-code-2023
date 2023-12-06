@@ -21,6 +21,7 @@ public class Main {
         } catch (ReflectiveOperationException e) {
             System.err.printf("day %d, problem %s not found.\n", Integer.parseInt(day), star);
             System.err.println(e);
+            e.printStackTrace();
         }
     }
 }

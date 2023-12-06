@@ -7,11 +7,11 @@
             "request": "launch",
             "mainClass": "Main",
             "args": [
-                "4", // day number
-                "2", // problem number
+                "5",
+                "2"
             ],
-            "projectName": "advent of code_883f09c7",
-            "cwd": "${workspaceFolder}",
+            "projectName": "advent-of-code_c1c335e2",
+            "cwd": "${workspaceFolder}"
         },
     ]
 }
