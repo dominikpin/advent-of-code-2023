@@ -38,9 +38,6 @@ public class Problem_1 {
             sortedHands.add(sortByHand(sortedHands, hand), hand);
         }
         cardsAndBids = sortedHands;
-        for (Hand hand : sortedHands) {
-            System.out.println(hand.toString());
-        }
     }
 
     private static void evaluateHand(Hand hand) {
