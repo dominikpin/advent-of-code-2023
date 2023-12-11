@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Problem_2 {
 
-    private static String[] NUMBERS = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    private static final String[] NUMBERS = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
     public Problem_2() throws FileNotFoundException {
         File myObj = new File("day01\\input.txt");

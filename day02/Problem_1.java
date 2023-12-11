@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Problem_1 {
 
-    private static String[][] possibleCubes = {{"12", "red"}, {"13", "green"}, {"14", "blue"}};
+    private static final String[][] possibleCubes = {{"12", "red"}, {"13", "green"}, {"14", "blue"}};
 
     public Problem_1() throws FileNotFoundException {
         File myObj = new File("day02\\input.txt");

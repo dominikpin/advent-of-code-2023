@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Problem_2 {
 
-    private static String[] cubeColors = {"red", "green", "blue"};
+    private static final String[] cubeColors = {"red", "green", "blue"};
 
     public Problem_2() throws FileNotFoundException {
         File myObj = new File("day02\\input.txt");

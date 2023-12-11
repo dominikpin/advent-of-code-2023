@@ -7,7 +7,7 @@
             "request": "launch",
             "mainClass": "Main",
             "args": [
-                "9",
+                "10",
                 "2"
             ],
             "projectName": "advent-of-code-2023_d52ebe0a",
