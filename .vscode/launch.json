@@ -7,8 +7,8 @@
             "request": "launch",
             "mainClass": "Main",
             "args": [
-                "10",
-                "2"
+                "12", // day number
+                "2" // part number
             ],
             "projectName": "advent-of-code-2023_d52ebe0a",
             "cwd": "${workspaceFolder}"

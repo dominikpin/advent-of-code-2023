@@ -13,11 +13,11 @@ public class Main {
         }
         String star = args[1];
 
-        String className = "day" + day + ".Problem_" + star;
+        String className = "day" + day + ".Part" + star;
 
         try {
-            Class<?> problemClass = Class.forName(className);
-            problemClass.getDeclaredConstructor().newInstance();
+            Class<?> partClass = Class.forName(className);
+            partClass.getDeclaredConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
             System.err.printf("day %d, problem %s not found.\n", Integer.parseInt(day), star);
             System.err.println(e);

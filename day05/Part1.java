@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Problem_1 {
+public class Part1 {
 
     public static final ArrayList<ArrayList<ArrayList<Long>>> seedsToLocation = new ArrayList<>();
 
-    public Problem_1() throws FileNotFoundException {
+    public Part1() throws FileNotFoundException {
         File myObj = new File("day05\\input.txt");
         Scanner myReader = new Scanner(myObj);
         ArrayList<Long> seeds = convertStringToLongArrayList(myReader.nextLine().split(":")[1].trim().split(" "));

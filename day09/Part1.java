@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Problem_2 {
+public class Part1 {
 
-    public Problem_2() throws FileNotFoundException {
+    public Part1() throws FileNotFoundException {
         File myObj = new File("day09\\input.txt");
         Scanner myReader = new Scanner(myObj);
         int sum = 0;
@@ -32,7 +32,7 @@ public class Problem_2 {
         }
         int difference = 0;
         for (int i = extrapolated.size() - 1; i >= 0; i--) {
-            difference = extrapolated.get(i).getFirst() - difference;
+            difference += extrapolated.get(i).getLast();
         }
         return difference;
     }

@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Problem_2 { 
+public class Part2 { 
 
-    public Problem_2() throws FileNotFoundException {
+    public Part2() throws FileNotFoundException {
         File myObj = new File("day03\\input.txt");
         Scanner myReader = new Scanner(myObj);
         int sum = 0;

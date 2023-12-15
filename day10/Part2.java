@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Problem_2 {
+public class Part2 {
 
     private static final char[] LEFT = {'-', 'F', 'L'};
     private static final char[] RIGHT = {'-', '7', 'J'};
@@ -20,7 +20,7 @@ public class Problem_2 {
         directions.add(DOWN);
     }
 
-    public Problem_2() throws FileNotFoundException {
+    public Part2() throws FileNotFoundException {
         File myObj = new File("day10\\input.txt");
         Scanner myReader = new Scanner(myObj);
         int sum = 0;

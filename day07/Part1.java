@@ -5,13 +5,13 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Problem_1 {
+public class Part1 {
 
     private static ArrayList<Hand> cardsAndBids = new ArrayList<Hand>();
     private static final char[] CARDS = {'2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'};
     // private static final String[] HAND_NAMES = {"High card", "One pair", "Two pair", "Three of a kind", "Full house", "Four of a kind", "Five of a kind"};
 
-    public Problem_1() throws FileNotFoundException {
+    public Part1() throws FileNotFoundException {
         File myObj = new File("day07\\input.txt");
         Scanner myReader = new Scanner(myObj);
         getAllHands(myReader);

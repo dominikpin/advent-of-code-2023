@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem_2 {
+public class Part2 {
 
     private static ArrayList<Line> lines = new ArrayList<>();
 
-    public Problem_2() throws FileNotFoundException {
+    public Part2() throws FileNotFoundException {
         File myObj = new File("day04\\input.txt");
         Scanner myReader = new Scanner(myObj);
         int sum = 0;

@@ -5,12 +5,12 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Problem_2 {
+public class Part1 {
 
-    public Problem_2() throws FileNotFoundException {
+    public Part1() throws FileNotFoundException {
         File myObj = new File("day11\\input.txt");
         Scanner myReader = new Scanner(myObj);
-        long sum = 0;
+        int sum = 0;
         ArrayList<String> space = new ArrayList<>();
         while (myReader.hasNextLine()) {
             space.add(myReader.nextLine());
@@ -20,7 +20,7 @@ public class Problem_2 {
         System.out.println(sum);
     }
 
-    private static long calculateAllDistancewithoutSpaceExpand(ArrayList<String> space) {
+    private static int calculateAllDistancewithoutSpaceExpand(ArrayList<String> space) {
         ArrayList<Integer> emptySpaceX = new ArrayList<>();
         for (int i = 0; i < space.size(); i++) {
             boolean isSpace = true;
@@ -55,7 +55,7 @@ public class Problem_2 {
                 }
             }
         }
-        long sum = 0;
+        int sum = 0;
         for (int i = 0; i < galaxiesCoords.size(); i++) {
             for (int j = i + 1; j < galaxiesCoords.size(); j++) {
                 if (galaxiesCoords.get(i)[1] > galaxiesCoords.get(j)[1]) {
@@ -80,6 +80,6 @@ public class Problem_2 {
                 counter++;
             }
         }
-        return counter * 999999;
+        return counter;
     }
 }
