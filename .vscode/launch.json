@@ -7,10 +7,10 @@
             "request": "launch",
             "mainClass": "Main",
             "args": [
-                "12", // day number
-                "2" // part number
+                "16",
+                "2"
             ],
-            "projectName": "advent-of-code-2023_d52ebe0a",
+            "projectName": "advent of code_883f09c7",
             "cwd": "${workspaceFolder}"
         },
     ]
