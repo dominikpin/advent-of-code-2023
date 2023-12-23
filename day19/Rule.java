@@ -21,6 +21,14 @@ public class Rule {
         return this.category;
     }
 
+    public char getSign() {
+        return this.sign;
+    }
+
+    public int getNumber() {
+        return this.number;
+    }
+
     public Workflow getWorkflow() {
         return this.workflow;
     }

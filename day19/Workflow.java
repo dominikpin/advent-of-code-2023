@@ -20,6 +20,10 @@ public class Workflow {
         return this.rules.get(number);
     }
 
+    public int getRuleListSize() {
+        return this.rules.size();
+    }
+
     public void addRule(Rule rule) {
         rules.add(rule);
     }
